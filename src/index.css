@@ -42,7 +42,7 @@
   }
 
   .card-hover {
-    @apply card hover:border-zinc-700 transition-colors;
+    @apply bg-surface border border-zinc-800 rounded-none shadow-sm hover:border-zinc-700 transition-colors;
   }
 
   .container-center {

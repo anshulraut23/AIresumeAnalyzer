@@ -180,21 +180,25 @@ import java.util.List;
 public class GeminiService {
 
     // PASTE YOUR OPENROUTER API KEY HERE
-    private final String API_KEY = "API_KEY_HERE";
+//    private final String API_KEY = "API_KEY_HERE";
 
+	private final String API_KEY =
+	        System.getenv("OPENROUTER_API_KEY");
+	
+	
     public AnalysisResponse analyzeResume(String resumeText, String jobDescription) throws Exception {
 
     	String prompt = """
     			You are an expert ATS Resume Analyzer.
 
-    			Analyze the resume against the job description carefully.
-
-    			Return ONLY valid JSON.
-
-    			Rules:
-    			- Give realistic ATS score
-    			- Provide meaningful strengths
-    			- Provide useful weaknesses
+	    			Analyze the resume against the job description carefully.
+	
+	    			Return ONLY valid JSON.
+	
+	    			Rules:
+	    			- Give realistic ATS score
+	    			- Provide meaningful strengths
+	    			- Provide useful weaknesses
     			- Give professional suggestions
     			- Add relevant recommended keywords
     			- Always fill all fields properly
