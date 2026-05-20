@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:8080',
+  baseURL: 'https://airesumeanalyzer-1-50s0.onrender.com',
   timeout: 30_000,
 });
 
