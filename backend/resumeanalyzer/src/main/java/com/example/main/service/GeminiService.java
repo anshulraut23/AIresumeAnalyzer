@@ -14,7 +14,7 @@
 //@Service
 //public class GeminiService {
 //
-//    private final String API_KEY = "AIzaSyDNV2cJ2NwLDcKP27lke93lU25Y2vzQKMo";
+//    private final String API_KEY = "APIKEY";
 //
 //    public AnalysisResponse analyzeResume(String resumeText, String jobDescription) throws Exception {
 //
@@ -180,7 +180,7 @@ import java.util.List;
 public class GeminiService {
 
     // PASTE YOUR OPENROUTER API KEY HERE
-    private final String API_KEY = "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";
+    private final String API_KEY = "API_KEY_HERE";
 
     public AnalysisResponse analyzeResume(String resumeText, String jobDescription) throws Exception {
 
